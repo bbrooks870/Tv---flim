@@ -12,7 +12,7 @@ export const embedMovie = (id: number) => `https://www.2embed.cc/embed/${id}`;
 export const imageResize = (src: string, dimension: string = 'w200') =>
   `${TMDB_IMAGE}${dimension}${src}`;
 export const embedEpisode = (id: number, season: number, episode: number) =>
-  `https://2embed.cc/embedtvfull/${id}`;
+  `https://2embed.cc/embed/${id}&sea=${season}&epi=${episode}`;
 
 export const airDate = (firstAir: string, lastAir: string) => {
   return firstAir === lastAir ? firstAir : `${firstAir} - ${lastAir}`;
