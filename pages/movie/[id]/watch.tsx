@@ -23,6 +23,7 @@ const Watch: NextPage<Props> = ({ data, similar }) => {
           <div className="col-span-8">
             <div className="relative mb-3" style={{ paddingBottom: '56.25%' }}>
               <iframe
+		sandbox="allow-forms allow-pointer-lock allow-same-origin allow-scripts allow-top-navigation"
                 className="absolute top-0 left-0 w-full h-full"
                 src={embedMovie(data.id)}
                 title=""
