@@ -17,6 +17,9 @@ const VideoItem = ({ item }: Props) => {
     <div>
       <p className="text-[1.5rem] font-semibold mb-4 truncate">{item.name}</p>
       <iframe
+	sandbox="allow-forms allow-pointer-lock allow-same-origin allow-scripts allow-top-navigation"
+	      allow="encrypted-media"
+
         ref={iframeRef}
         className="rounded-3xl"
         src={`https://www.youtube.com/embed/${item.key}`}
